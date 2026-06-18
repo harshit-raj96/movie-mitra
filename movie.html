@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="movie.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="movie_mitra_logo-removebg-preview.png" alt="MovieMitra Logo">
+</div>
+
+<ul class="nav-links">
+<li><a href="#header">Home</a></li>
+<li><a href="#About">About</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+  <!-- 🔍 Search Box -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search movies..." />
+    <i class="search-icon">🔍</i>
+
+    <!-- Suggestions -->
+    <div id="suggestions"></div>
+  
+</div>
+<a href="movielogin.html" class="login-btn">Login</a>
+
+</nav>
+<!-- dark mode  -->
+<div class="theme-switch">
+  <label class="switch">
+    <input type="checkbox" id="toggleMode">
+    <span class="slider"></span>
+  </label>
+</div>
+<!-- Header Section -->
+
+<header class="header" id="header">
+
+<div class="header-content">
+<h1>Watch Latest Movies</h1>
+<p>Enjoy unlimited movies and entertainment</p>
+<!-- <div class="movie-container" id="movie-container"></div> -->
+<button class="watch-btn">Watch Now</button>
+</div>
+
+<div class="poster">
+<img id="header-poster" src="">
+<h2 id="poster-title" class="movie-banner-title"></h2>
+</div>
+
+</header>
+
+
+<section class="movies">
+  <h2 class="heading">Latest Movies</h2>
+  
+  <div class="movie-container" id="latest"></div>
+  
+</section>
+<div id="searchResults" class="movie-grid"></div>
+
+<section class="movies">
+<h2 class="heading">Bollywood Movies</h2>
+<div class="movie-container" id="bollywood"></div>
+</section>
+
+<section class="movies">
+<h2 class="heading">Hollywood Movies</h2>
+<div class="movie-container" id="hollywood"></div>
+</section>
+
+<section class="movies">
+<h2 class="heading">South Movies</h2>
+<div class="movie-container" id="south"></div>
+</section>
+
+<section class="movies">
+<h2 class="heading">Anime Movies</h2>
+<div class="movie-container" id="anime"></div>
+</section>
+
+<section class="movies">
+<h2 class="heading">Web Series</h2>
+<div class="movie-container" id="webseries"></div>
+</section>
+
+<section class="about" id="About" >
+<h2>About Developer</h2>
+<p>
+Hi! I am <strong class="developer">Harshit Raj</strong>, a passionate web developer who loves creating movie websites 
+and interactive UI experiences. I specialize in HTML, CSS, JavaScript, and responsive web design.
+My goal is to make websites that are user-friendly, visually appealing, and modern.
+</p>
+</section>
+
+<div id="movie-popup" class="popup">
+
+<div class="popup-content">
+
+<span class="close-btn" onclick="closePopup()">✖</span>
+
+<div class="popup-top">
+
+<img id="popup-poster">
+
+<div class="popup-info">
+<h2 id="popup-title"></h2>
+<p id="popup-rating"></p>
+<p id="popup-actors"></p>
+<p id="popup-overview"></p>
+</div>
+
+</div>
+
+<div class="trailer-box" id="popup-trailer"></div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-box">
+<h3>MovieSite</h3>
+<p>Watch latest movies and explore trending cinema here.</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Latest Movies</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+
+<div class="footer-box">
+<h3>Developer Info</h3>
+<p>Name: <strong class="developer">Harshit Raj</strong></p>
+<p>Email: <a class="developer"  href="mailto:harshitxyz@gmail.com">harshitxyz@gmail.com</a></p>
+<p>Role: Web Developer</p>
+<p>Passionate about modern web design and interactive movie websites.</p>
+</div>
+
+</div>
+
+<p class="copy">© 2026 MovieSite | Developed by Harshit Raj | All Rights Reserved</p>
+
+</footer>
+<script src="movie.js"></script>
+
+
+</body>
+</html>

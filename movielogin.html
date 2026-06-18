@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MovieMitra Login</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#000;
+}
+.container{
+    width:700px;height:350px;
+    display:flex;border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px #00f2ff,0 0 40px #00f2ff;
+}
+.left{
+    width:50%;padding:40px;color:white;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+}
+.input-box{margin-bottom:20px;}
+.input-box input{
+    width:100%;padding:10px;
+    background:transparent;border:none;
+    border-bottom:2px solid #aaa;color:white;
+}
+button{
+    width:100%;padding:10px;
+    border:none;border-radius:20px;
+    background:linear-gradient(to right,#00f2ff,#00c3ff);
+    color:white;cursor:pointer;
+}
+.signup{margin-top:15px;}
+.signup a{color:#00f2ff;}
+.right{
+    width:50%;display:flex;
+    justify-content:center;align-items:center;
+    background:linear-gradient(49deg,transparent 50%,#00f2ff 50%);
+}
+.right h2{color:black;}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left">
+    <h2>Login</h2>
+
+    <div class="input-box">
+        <input type="email" id="email" placeholder="Email">
+    </div>
+
+    <div class="input-box">
+        <input type="password" id="password" placeholder="Password">
+    </div>
+
+    <button onclick="login()">Login</button>
+
+    <div class="signup">
+        Don't have account? <a href="moviesignup.html">Sign Up</a>
+    </div>
+</div>
+
+<div class="right">
+    <h2>WELCOME BACK!</h2>
+</div>
+
+</div>
+
+<script>
+function login(){
+    let email=document.getElementById("email").value;
+    let password=document.getElementById("password").value;
+
+    let user=localStorage.getItem(email);
+
+    if(!user){
+        alert("User not found ❌");
+        return;
+    }
+
+    user=JSON.parse(user);
+
+    if(user.password===password){
+        localStorage.setItem("loggedUser", user.name);
+        alert("Login success 🎉");
+        window.location.href="movie.html";
+    }else{
+        alert("Wrong password ❌");
+    }
+}
+</script>
+
+</body>
+</html>
