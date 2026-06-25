@@ -2,7 +2,7 @@
 🎬 Movie Mitra – Discover the latest movies, watch trailers, check ratings, and explore trending films. Built with modern web technologies by Harshit Raj. 🍿✨
 # 🎬 Movie Mitra
 
-![Movie Mitra Banner](https://img.shields.io/badge/Movie-Mitra-red?style=for-the-badge)
+![Movie Mitra Banner]()
 
 Movie Mitra is a modern movie discovery platform designed for movie lovers. Users can explore the latest movie trailers, check ratings, discover trending movies, and stay updated with the entertainment world through a clean and user-friendly interface.
 
@@ -29,7 +29,7 @@ Movie Mitra is a modern movie discovery platform designed for movie lovers. User
 
 Visit Movie Mitra:
 
-https://your-vercel-url.vercel.app
+https://movie-mitra-sigma.vercel.app/
 
 ## 📂 Project Structure
 
@@ -82,7 +82,7 @@ Contributions, suggestions, and feedback are always welcome.
 
 Passionate Web Developer focused on building modern, user-friendly, and impactful web applications.
 
-GitHub: https://github.com/your-github-username
+GitHub: https://github.com/harshit-raj96/movie-mitra/blob/main/README.md
 
 ## 📄 License
 
