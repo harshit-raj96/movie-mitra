@@ -2,7 +2,7 @@
 🎬 Movie Mitra – Discover the latest movies, watch trailers, check ratings, and explore trending films. Built with modern web technologies by Harshit Raj. 🍿✨
 # 🎬 Movie Mitra
 
-![Movie Mitra Banner]()
+![Movie Mitra Banner](movie-mitra-homepage.png)
 
 Movie Mitra is a modern movie discovery platform designed for movie lovers. Users can explore the latest movie trailers, check ratings, discover trending movies, and stay updated with the entertainment world through a clean and user-friendly interface.
 
